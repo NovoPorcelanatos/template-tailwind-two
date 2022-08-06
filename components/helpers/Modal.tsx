@@ -42,24 +42,21 @@ export default function Modal() {
                       <ExclamationIcon className="h-6 w-6 text-red-600" aria-hidden="true" />
                     </div> */}
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                      <Dialog.Title as="h3" className="text-3xl text-center leading-6 font-extrabold text-red-600">
-                       NOS MUDAMOS!
+                      <Dialog.Title as="h3" className="text-3xl text-center leading-6 font-extrabold text-red-600"  tabIndex={1}>
+                       EXHIBICIONES LISTAS!
                       </Dialog.Title>
                       <div className="mt-2">
                         <p className="text-lg text-gray-500">
-                        Estamos armando nuevamente las exhibiciones y <b>YA</b> podés encontrarnos en <b>Pte Perón 8808 , Ituzaingó </b>  (colectora Acceso Oeste mano a Morón).  Esquina Cerrito.
+                        Ya armamos el shoowroom y <b>YA</b> podés encontrarnos en <b>Pte Perón 8808 , Ituzaingó </b>  (colectora Acceso Oeste mano a Morón).  Esquina Cerrito.
                         <br />
-                        <b className='text-center w-full block text-lg text-black'>EXHIBICIONES EN CONSTRUCCIÓN</b>
-                        <a href="tel:+541157652651" className='text-center w-full block text-xl text-red-600 font-extrabold shine-hope-anim' tabIndex={-1}>VENTAS PRINCIPALMENTE ONLINE</a>
                         <a href="https://goo.gl/maps/6aEVZb3eU2CnMcBDA" target='_blank' rel='noreferrer noopener'  tabIndex={-1}>
                         <Image
-                          src="/nuevofrente.jpeg"
+                          src="/nuevo.jpeg"
                           alt="Picture of the author"
                           width={500}
                           height={400}
                         />
                         </a>
-                        <br />  Podes comunicarte con nosotros al <a href="tel:+541157652651" className='font-bold'  tabIndex={1}>11-5765-2651</a>
                         </p>
                       </div>
                     </div>
