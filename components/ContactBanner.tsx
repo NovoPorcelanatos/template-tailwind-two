@@ -1,5 +1,7 @@
 import React from 'react'
 import {MailIcon, PhoneOutgoingIcon, MapIcon } from '@heroicons/react/outline'
+import Image from 'next/image'
+
 function ContactBanner() {
   return (
     <section className=" bg-transparent text-white">
@@ -63,7 +65,14 @@ function ContactBanner() {
           <div className="map-container-2 w-full">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1160.7201346004497!2d-58.696699714334436!3d-34.629129131931876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfab6556d74f%3A0xd52beafb332c9588!2sAv.%20Pres.%20Per%C3%B3n%208808%2C%20B1714ARC%20Ituzaing%C3%B3%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1657813556768!5m2!1ses-419!2sar" className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" frameBorder="0" allowFullScreen></iframe>
           </div>
-        
+          <div className='flex justify-center p-4 w-full'>
+          <Image 
+             src="/novo.webp"
+             alt="Picture of the author"
+             width={1000}
+             height={400}
+            />
+          </div>
       </div>
     </div>
   </section>
