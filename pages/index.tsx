@@ -1,10 +1,11 @@
 import type { NextPage } from 'next'
 import Hero from '../components/Hero'
 import Categories from '../components/Categories'
-import Choose from '../components/Choose'
 import SocialMedia from '../components/SocialMedia'
 import Features from '../components/Features'
 import Modal from '../components/helpers/Modal'
+import NuevoCarrusel from '../components/NuevoCarrusel'
+
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +13,8 @@ const Home: NextPage = () => {
       <Modal/>
       <Hero />
       <Features />
-      <Choose />
+      {/* <Choose /> */}
+      <NuevoCarrusel />
       <Categories />
       <SocialMedia />
     </div>

@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import {  LazyMotion, domAnimation, m } from "framer-motion"
 import Link from 'next/link'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 function Hero() {
   return (
@@ -30,15 +32,81 @@ function Hero() {
                     viewport={{ once: true }}
                     transition={{ duration: .2 }}>
                     
+
+                    <Carousel
+                    autoPlay={true}
+                    stopOnHover={true}
+                    transitionTime={1}
+                    infiniteLoop={true}
+                    emulateTouch={true}
+                    showStatus={false}
+                    animationHandler={'slide'}
+                    >
+
+       <div>
        <a href='https://novoporcelanatos468381923.mercadoshops.com.ar/' target="_blank" rel='noopener noreferrer'>
         <Image
-          src="/construccion.jpeg"
+          src="/novo.webp"
+          className="w-full rounded shadow-lg "
+          alt="Showroom de novo porcelanatos"
+          width={650}
+          height={450}
+          priority={true}
+        />
+      </a>
+       </div>
+
+       <div>
+       <a href='https://novoporcelanatos468381923.mercadoshops.com.ar/' target="_blank" rel='noopener noreferrer'>
+        <Image
+          src="/galeria.webp"
           className="w-full rounded shadow-lg "
           alt="Showroom de novo porcelanatos"
           width={650}
           height={450}
         />
       </a>
+       </div>
+
+       <div>
+       <a href='https://novoporcelanatos468381923.mercadoshops.com.ar/' target="_blank" rel='noopener noreferrer'>
+        <Image
+          src="/galeria1.webp"
+          className="w-full rounded shadow-lg "
+          alt="Showroom de novo porcelanatos"
+          width={650}
+          height={450}
+        />
+      </a>
+       </div>
+
+       <div>
+       <a href='https://novoporcelanatos468381923.mercadoshops.com.ar/' target="_blank" rel='noopener noreferrer'>
+        <Image
+          src="/galeria2.webp"
+          className="w-full rounded shadow-lg "
+          alt="Showroom de novo porcelanatos"
+          width={650}
+          height={450}
+        />
+      </a>
+       </div>
+
+       <div>
+       <a href='https://novoporcelanatos468381923.mercadoshops.com.ar/' target="_blank" rel='noopener noreferrer'>
+        <Image
+          src="/galeria3.webp"
+          className="w-full rounded shadow-lg "
+          alt="Showroom de novo porcelanatos"
+          width={650}
+          height={450}
+        />
+      </a>
+       </div>
+
+          </Carousel>
+
+
       <a href="https://g.page/novo-porcelanatos?share" target='_blank' rel='noopener noreferrer'> <h1 className='relative z-10 font-semibold text-white uppercase text-lg  pb-2 text-center'><span className='text-red-600 font-bold text-xl underline'>Showroom:</span>Av. Pres. Perón 8808, Ituzaingó</h1></a>
       <h2 className='relative z-10 font-semibold text-white uppercase text-lg  pb-2 text-center'><span className='text-red-600 font-bold text-xl underline'>Retiro de mercadería:</span> San Justo, La Matanza</h2>
                       <a href="tel:+54 9 11 5765-2651" target='_blank' rel='noopener noreferrer'><h3 className='relative z-10 font-semibold text-white uppercase text-lg pb-8 text-center'><span className='text-red-600 font-bold text-xl underline'>Teléfono:</span> 11 5765-2651</h3></a>

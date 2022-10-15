@@ -42,21 +42,22 @@ export default function Modal() {
                       <ExclamationIcon className="h-6 w-6 text-red-600" aria-hidden="true" />
                     </div> */}
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                      <Dialog.Title as="h3" className="text-3xl text-center leading-6 font-extrabold text-red-600"  tabIndex={1}>
-                       EXHIBICIONES LISTAS!
+                      <Dialog.Title as="h3" className="title text-red-600 text-center" >
+                      ATENCION!
                       </Dialog.Title>
                       <div className="mt-2">
-                        <p className="text-lg text-gray-500">
-                        Ya armamos el shoowroom y <b>YA</b> podés encontrarnos en <b>Pte Perón 8808 , Ituzaingó </b>  (colectora Acceso Oeste mano a Morón).  Esquina Cerrito.
+                        <p className="text-lg text-gray-500 ">
+                        Todos los productos publicados cuentan con <b>stock</b> (aunque aparezcan 1m<sup>2</sup> ).  
                         <br />
-                        <a href="https://goo.gl/maps/6aEVZb3eU2CnMcBDA" target='_blank' rel='noreferrer noopener'  tabIndex={-1}>
+                        <p>Los <b>precios publicados</b> son de Contado / <b>EfectivoX</b>. </p>
+                        {/* <a href="https://goo.gl/maps/6aEVZb3eU2CnMcBDA" target='_blank' rel='noreferrer noopener'  tabIndex={-1}>
                         <Image
                           src="/nuevo.jpeg"
                           alt="Picture of the author"
                           width={500}
                           height={400}
                         />
-                        </a>
+                        </a> */}
                         </p>
                       </div>
                     </div>
